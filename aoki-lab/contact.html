@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Aoki Lab. - シネマトグラファー 青木隆幸</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- ここにfaviconやOGP設定などを追加できます -->
+</head>
+<body>
+    <!-- ヘッダー部分 -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <h1>Aoki Lab</h1>
+                <!-- ロゴをSVGや画像に置き換える場合はこちらを編集 -->
+            </a>
+        </div>
+        
+        <!-- ハンバーガーメニュー -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- ナビゲーションメニュー -->
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="works.html">WORKS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
+                <li><a href="#" class="lang-switch">EN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- コンタクトヘッダー -->
+        <section class="contact-header">
+            <div class="contact-header-content">
+                <h2>Contact</h2>
+                <p>撮影のご依頼・お問い合わせ</p>
+            </div>
+        </section>
+        
+        <!-- コンタクトセクション -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>お問い合わせ</h3>
+                    <p>ご依頼やご質問はお問い合わせください。<br>すぐに折り返し連絡いたします。</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <p>問い合わせフォームよりご連絡ください</p>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <p>お問い合わせフォームよりご連絡ください</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">お名前 <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">メールアドレス <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">会社名/所属</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">件名 <span class="required">*</span></label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">メッセージ <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">プライバシーポリシーに同意する <span class="required">*</span></label>
+                            <a href="privacy-policy.html" target="_blank">プライバシーポリシーを読む</a>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">送信</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- リマインダーセクション -->
+        <section class="reminder-section">
+            <div class="reminder-container">
+                <div class="reminder-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>スケジュール</h3>
+                    <p>撮影のご依頼は余裕をもってご連絡ください。<br>状況によってはご希望に添えない場合もございます。</p>
+                </div>
+                
+                <div class="reminder-item">
+                    <i class="fas fa-sticky-note"></i>
+                    <h3>詳細情報</h3>
+                    <p>制作内容、撮影場所、日程など詳細をご記入いただくとスムーズです。</p>
+                </div>
+                
+                <div class="reminder-item">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <h3>お見積もり</h3>
+                    <p>予算や納期などの条件を明確にすることで、より具体的なご提案が可能です。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2023 Aoki Lab. All Rights Reserved.</p>
+            <p class="privacy-policy">本サイトの動画や画像は許可なく複製・使用することはできません。アクセス情報はアクセス解析ツールにより取得しています。</p>
+        </div>
+    </footer>
+
+    <!-- スクリプト -->
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+/* Contact ページ用スタイル */
+
+/* コンタクトヘッダー */
+.contact-header {
+    height: 40vh;
+    min-height: 300px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.contact-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.contact-header-content {
+    position: relative;
+    z-index: 1;
+    padding: 0 1rem;
+}
+
+.contact-header h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.contact-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+    color: var(--secondary-text);
+}
+
+/* コンタクトセクション */
+.contact-section {
+    padding: 5rem 5%;
+    background-color: var(--dark-bg);
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+}
+
+.contact-info > p {
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+    color: var(--secondary-text);
+}
+
+.contact-methods {
+    margin-bottom: 2rem;
+}
+
+.contact-method {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.contact-method i {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin-right: 1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.contact-method p {
+    flex: 1;
+    line-height: 1.5;
+}
+
+/* 削除：SNSリンクのスタイル */
+
+
+/* コンタクトフォーム */
+.contact-form-container {
+    flex: 2;
+    min-width: 300px;
+}
+
+.contact-form {
+    background-color: rgba(20, 20, 20, 0.5);
+    padding: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.required {
+    color: #e74c3c;
+    margin-left: 3px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 3px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+}
+
+.checkbox-group a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.submit-button:hover {
+    background-color: var(--button-hover);
+}
+
+/* リマインダーセクション */
+.reminder-section {
+    padding: 5rem 5%;
+    background-color: rgba(20, 20, 20, 0.5);
+}
+
+.reminder-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.reminder-item {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+}
+
+.reminder-item i {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.reminder-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.reminder-item p {
+    font-size: 0.95rem;
+    color: var(--secondary-text);
+    line-height: 1.6;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .contact-header {
+        height: 30vh;
+    }
+    
+    .contact-header h2 {
+        font-size: 2.5rem;
+    }
+    
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .contact-info,
+    .contact-form-container {
+        flex: 1 1 100%;
+    }
+    
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    .reminder-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-header {
+        height: 25vh;
+        min-height: 200px;
+    }
+    
+    .contact-header h2 {
+        font-size: 2rem;
+    }
+    
+    .contact-header p {
+        font-size: 1rem;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .social-link {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem;
+    }
+}

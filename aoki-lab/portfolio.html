@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works - Aoki Lab. - シネマトグラファー 青木隆幸</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- ここにfaviconやOGP設定などを追加できます -->
+</head>
+<body>
+    <!-- ヘッダー部分 -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <h1>Aoki Lab</h1>
+                <!-- ロゴをSVGや画像に置き換える場合はこちらを編集 -->
+            </a>
+        </div>
+        
+        <!-- ハンバーガーメニュー -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- ナビゲーションメニュー -->
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="works.html" class="active">WORKS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#" class="lang-switch">EN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ポートフォリオヘッダー -->
+        <section class="portfolio-header">
+            <div class="container">
+                <h1>WORKS</h1>
+                <p>シネマトグラファー 青木隆幸の作品一覧</p>
+            </div>
+        </section>
+
+        <!-- カテゴリータブ -->
+        <section class="portfolio-filter">
+            <div class="container">
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">ALL</button>
+                    <button class="filter-btn" data-filter="commercial">COMMERCIAL</button>
+                    <button class="filter-btn" data-filter="music-video">MUSIC VIDEO</button>
+                    <button class="filter-btn" data-filter="web">WEB</button>
+                    <button class="filter-btn" data-filter="other">OTHER</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 作品グリッド -->
+        <section class="portfolio-grid">
+            <div class="container">
+                <div class="grid-container">
+                    <!-- COMMERCIAL作品 -->
+                    <div class="grid-item commercial fade-item">
+                        <div class="portfolio-item">
+                            <div class="portfolio-thumbnail">
+                                <img src="images/works/commercial/sample1.jpg" alt="アサヒビールCM" loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <h3>アサヒビールCM</h3>
+                                    <button class="view-work-btn" data-work-id="commercial-01">View Work</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item commercial fade-item">
+                        <div class="portfolio-item">
+                            <div class="portfolio-thumbnail">
+                                <img src="images/works/commercial/sample2.jpg" alt="TOYOTA CM" loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <h3>TOYOTA CM</h3>
+                                    <button class="view-work-btn" data-work-id="commercial-02">View Work</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid-item commercial fade-item">
+                        <div class="portfolio-item">
+                            <div class="portfolio-thumbnail">
+                                <img src="images/works/commercial/sample3.jpg" alt="日産自動車CM" loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <h3>日産自動車CM</h3>
+                                    <button class="view-work-btn" data-work-id="commercial-03">View Work</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid-item commercial fade-item">
+                        <div class="portfolio-item">
+                            <div class="portfolio-thumbnail">
+                                <img src="images/works/commercial/sample4.jpg" alt="ソフトバンクCM" loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <h3>ソフトバンクCM</h3>
+                                    <button class="view-work-btn" data-work-id="commercial-04">View Work</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MUSIC VIDEO作品 -->
+                    <div class="grid-item music-video fade-item">
+                        <div class="portfolio-item">
+                            <div class="portfolio-thumbnail">
+                                <img src="images/works/music-video/sample1.jpg" alt="ONE OK ROCK MV" loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <h3>ONE OK ROCK MV</h3>
+                                    <button class="view-work-btn" data-work-id="mv-01">View Work</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item music-video fade-item">
+                        <div class="portfolio-item">
+                            <div class="portfolio-thumbnail">
+                                <img src="images/works/music-video/sample2.jpg" alt="RADWIMPS MV" loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <h3>RADWIMPS MV</h3>
+                                    <button class="view-work-btn" data-work-id="mv-02">View Work</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid-item music-video fade-item">
+                        <div class="portfolio-item">
+                            <div class="portfolio-thumbnail">
+                                <img src="images/works/music-video/sample3.jpg" alt="米津玄師 MV" loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <h3>米津玄師 MV</h3>
+                                    <button class="view-work-btn" data-work-id="mv-03">View Work</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid-item music-video fade-item">
+                        <div class="portfolio-item">
+                            <div class="portfolio-thumbnail">
+                                <img src="images/works/music-video/sample4.jpg" alt="King Gnu MV" loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <h3>King Gnu MV</h3>
+                                    <button class="view-work-btn" data-work-id="mv-04">View Work</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WEB作品 -->
+                    <div class="grid-item web fade-item">
+                        <div class="portfolio-item">
+                            <div class="portfolio-thumbnail">
+                                <img src="images/works/web/sample1.jpg" alt="Apple Japan WEB CM" loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <h3>Apple Japan WEB CM</h3>
+                                    <button class="view-work-btn" data-work-id="web-01">View Work</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid-item web fade-item">
+                        <div class="portfolio-item">
+                            <div class="portfolio-thumbnail">
+                                <img src="images/works/web/sample2.jpg" alt="Google Japan WEB CM" loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <h3>Google Japan WEB CM</h3>
+                                    <button class="view-work-btn" data-work-id="web-02">View Work</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- OTHER作品 -->
+                    <div class="grid-item other fade-item">
+                        <div class="portfolio-item">
+                            <div class="portfolio-thumbnail">
+                                <img src="images/works/other/sample1.jpg" alt="Short Film" loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <h3>Short Film "Twilight"</h3>
+                                    <button class="view-work-btn" data-work-id="other-01">View Work</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid-item other fade-item">
+                        <div class="portfolio-item">
+                            <div class="portfolio-thumbnail">
+                                <img src="images/works/other/sample2.jpg" alt="Documentary" loading="lazy">
+                                <div class="portfolio-overlay">
+                                    <h3>Documentary "Tokyo Night"</h3>
+                                    <button class="view-work-btn" data-work-id="other-02">View Work</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- さらに作品を追加できます -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2023 Aoki Lab. All Rights Reserved.</p>
+            <p class="privacy-policy">本サイトの動画や画像は許可なく複製・使用することはできません。アクセス情報はアクセス解析ツールにより取得しています。</p>
+        </div>
+    </footer>
+
+    <!-- 作品視聴モーダル -->
+    <div id="portfolioModal" class="modal">
+        <div class="modal-content video-modal">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle">作品タイトル</h2>
+            
+            <div class="video-container">
+                <!-- ここにVimeoプレーヤーが動的に挿入されます -->
+                <div id="videoPlayer"></div>
+            </div>
+            
+            <div class="work-details">
+                <div class="detail-item">
+                    <h3>制作年</h3>
+                    <p id="modalYear">2023</p>
+                </div>
+                <div class="detail-item">
+                    <h3>クライアント</h3>
+                    <p id="modalClient">Client Name</p>
+                </div>
+                <div class="detail-item">
+                    <h3>制作会社</h3>
+                    <p id="modalProduction">Production Company</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- アクセスリクエストモーダル（このページへのアクセス時に表示） -->
+    <div id="accessRequestModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>作品閲覧リクエスト</h2>
+            <p>以下の情報をご入力いただくと、作品一覧をご覧いただけます。</p>
+            
+            <form id="accessRequestForm">
+                <div class="form-group">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">会社名/所属 <span class="optional">(任意)</span></label>
+                    <input type="text" id="company" name="company">
+                </div>
+                
+                <div class="form-group">
+                    <label for="source">どこからこのサイトを知りましたか？ <span class="optional">(任意)</span></label>
+                    <textarea id="source" name="source" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">プライバシーポリシーに同意する</label>
+                    <a href="privacy-policy.html" target="_blank">プライバシーポリシー</a>
+                </div>
+                
+                <button type="submit" class="submit-button">送信</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- スクリプト -->
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>

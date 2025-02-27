@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aoki Lab. - シネマトグラファー 青木隆幸</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- ここにfaviconやOGP設定などを追加できます -->
+</head>
+<body>
+    <!-- ヘッダー部分 -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <h1>Aoki Lab</h1>
+                <!-- ロゴをSVGや画像に置き換える場合はこちらを編集 -->
+            </a>
+        </div>
+        
+        <!-- ハンバーガーメニュー -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- ナビゲーションメニュー -->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="works.html">WORKS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#" class="lang-switch">EN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ヒーロセクション（青枠付き） -->
+        <section class="hero">
+            <div class="hero-frame">
+                <div class="hero-content">
+                    <h2>Welcome to my lab.</h2>
+                    <h3>Takayuki Aoki - Cameraman</h3>
+                    <p>A fusion of filmmaking technology and creative exploration.</p>
+                </div>
+            </div>
+            <!-- バックグラウンド画像またはビデオはCSSで設定 -->
+        </section>
+
+        <!-- セレクト作品セクション -->
+        <section class="selected-works">
+            <h2>SELECTED WORKS</h2>
+            
+            <!-- カテゴリータブ -->
+            <div class="work-tabs">
+                <button class="tab-button active" data-category="all">ALL</button>
+                <button class="tab-button" data-category="commercial">COMMERCIAL</button>
+                <button class="tab-button" data-category="music-video">MUSIC VIDEO</button>
+                <button class="tab-button" data-category="web">WEB CONTENT</button>
+            </div>
+            
+            <!-- 作品スライダー -->
+            <div class="works-slider">
+                <div class="slider-container">
+                    <!-- 作品アイテム -->
+                    <div class="work-item" data-categories="commercial">
+                        <div class="work-thumbnail">
+                            <img src="images/work-placeholder-1.jpg" alt="アサヒビールCM">
+                            <div class="work-overlay">
+                                <h3>アサヒビールCM</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="work-item" data-categories="music-video">
+                        <div class="work-thumbnail">
+                            <img src="images/work-placeholder-2.jpg" alt="ONE OK ROCK MV">
+                            <div class="work-overlay">
+                                <h3>ONE OK ROCK MV</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="work-item" data-categories="web">
+                        <div class="work-thumbnail">
+                            <img src="images/work-placeholder-3.jpg" alt="Apple Japan WEB CM">
+                            <div class="work-overlay">
+                                <h3>Apple Japan WEB CM</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 追加の作品をここに追加できます -->
+                </div>
+                
+                <!-- スライダーコントロール -->
+                <button class="slider-control prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-control next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- カテゴリーセクション -->
+        <section class="categories">
+            <h2>CATEGORIES</h2>
+            <div class="category-container">
+                <a href="category-commercial.html" class="category-item">
+                    <div class="category-circle">
+                        <span>CM</span>
+                    </div>
+                    <p>COMMERCIAL</p>
+                </a>
+                
+                <a href="category-musicvideo.html" class="category-item">
+                    <div class="category-circle">
+                        <span>MV</span>
+                    </div>
+                    <p>MUSIC VIDEO</p>
+                </a>
+                
+                <a href="category-web.html" class="category-item">
+                    <div class="category-circle">
+                        <span>WEB</span>
+                    </div>
+                    <p>WEB CONTENT</p>
+                </a>
+                
+                <a href="category-other.html" class="category-item">
+                    <div class="category-circle">
+                        <span>ETC</span>
+                    </div>
+                    <p>OTHER WORKS</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2023 Aoki Lab. All Rights Reserved.</p>
+            <p class="privacy-policy">本サイトの動画や画像は許可なく複製・使用することはできません。アクセス情報はアクセス解析ツールにより取得しています。</p>
+        </div>
+    </footer>
+
+    <!-- モーダルウィンドウ（視聴リクエスト） -->
+    <div id="requestModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>視聴リクエスト</h2>
+            <p>作品を視聴するために以下の情報をご記入ください。</p>
+            
+            <form id="requestForm">
+                <input type="hidden" id="workTitle" name="workTitle">
+                <div class="form-group">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">会社名/所属 <span class="optional">(任意)</span></label>
+                    <input type="text" id="company" name="company">
+                </div>
+                
+                <div class="form-group">
+                    <label for="source">どこからこのサイトを知りましたか？ <span class="optional">(任意)</span></label>
+                    <textarea id="source" name="source" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">プライバシーポリシーに同意する</label>
+                    <a href="privacy-policy.html" target="_blank">プライバシーポリシー</a>
+                </div>
+                
+                <button type="submit" class="submit-button">送信</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- スクリプト -->
+    <script src="js/main.js"></script>
+</body>
+</html>

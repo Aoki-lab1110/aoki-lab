@@ -1,0 +1,252 @@
+/* About ページ用スタイル */
+
+/* プロフィールセクション */
+.profile {
+    padding: 8rem 5% 5rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.profile-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.profile-image {
+    flex: 0 0 300px;
+    position: relative;
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-frame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--accent-color);
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+}
+
+.profile-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.profile-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.profile-name-jp {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile-name-en {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+}
+
+.profile-title {
+    font-size: 1.2rem;
+    color: var(--secondary-text);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.profile-bio p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+/* サービスセクション */
+.services {
+    padding: 5rem 5%;
+    background-color: rgba(20, 20, 20, 0.5);
+}
+
+.services h2, 
+.clients h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* コマンドアイコン専用スタイル */
+.command-icon {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.service-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.service-item p {
+    font-size: 0.95rem;
+    color: var(--secondary-text);
+}
+
+/* クライアントセクション */
+.clients {
+    padding: 5rem 5%;
+}
+
+.clients-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.client-list p {
+    font-size: 1.2rem;
+    line-height: 2;
+    color: var(--secondary-text);
+}
+
+/* CTA セクション */
+.cta-section {
+    padding: 5rem 5%;
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.5);
+}
+
+.cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-container p {
+    font-size: 1.2rem;
+    color: var(--secondary-text);
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--button-hover);
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .profile-image {
+        flex: 0 0 250px;
+        max-width: 250px;
+        margin-bottom: 2rem;
+    }
+    
+    .profile-content {
+        text-align: center;
+    }
+    
+    .profile-header {
+        text-align: center;
+    }
+    
+    .profile-name-en {
+        font-size: 2rem;
+    }
+    
+    .service-item {
+        flex: 0 0 100%;
+        max-width: 350px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile {
+        padding-top: 6rem;
+    }
+    
+    .profile-image {
+        flex: 0 0 200px;
+        max-width: 200px;
+    }
+    
+    .profile-name-jp {
+        font-size: 1.5rem;
+    }
+    
+    .profile-name-en {
+        font-size: 1.8rem;
+    }
+    
+    .profile-bio p {
+        font-size: 0.9rem;
+    }
+    
+    .cta-container h2 {
+        font-size: 2rem;
+    }
+}
